@@ -1,0 +1,50 @@
+{
+  "name": "editorjs-mathcyou",
+  "version": "1.0.1",
+  "description": "A plugin for Editor.js that adds support for LaTeX math formulas (inline and block)",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "editorjs",
+    "editor",
+    "math",
+    "latex",
+    "katex",
+    "formula",
+    "equation"
+  ],
+  "author": "Quochung.cyou",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quochung-cyou/editorjs-mathcyou.git"
+  },
+  "bugs": {
+    "url": "https://github.com/quochung-cyou/editorjs-mathcyou/issues"
+  },
+  "homepage": "https://github.com/quochung-cyou/editorjs-mathcyou#readme",
+  "peerDependencies": {
+    "@editorjs/editorjs": "^2.20.0",
+    "katex": "^0.13.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.0",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "jest": "^27.0.0",
+    "rollup": "^2.47.0",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "dependencies": {
+    "rollup-plugin-copy": "^3.5.0"
+  }
+}
