@@ -15,7 +15,7 @@
     "@editorjs/list": "^2.0.6",
     "@editorjs/paragraph": "^2.11.7",
     "editorjs-mathcyou": "^1.0.1",
-    "katex": "^0.13.24",
+    "katex": "^0.16.21",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
