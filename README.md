@@ -2,7 +2,9 @@
 
 A plugin for Editor.js that adds support for LaTeX math formulas, both inline and as blocks.
 
-Demo: 
+Demo: https://chatchit-dc6fa.web.app/
+
+![alt text](image.png)
 
 ## Features
 
@@ -28,6 +30,13 @@ yarn add editorjs-mathcyou
 
 - Editor.js v2.20 or higher
 - KaTeX v0.13.0 or higher
+
+For Static Build and using WebPack/Vite/... you may need to do
+
+```javascript
+import katex from 'katex'
+window.katex = katex
+```
 
 ## Usage
 

@@ -1,9 +1,12 @@
 import React, { useEffect, useRef } from 'react';
-import EditorJS from '@editorjs/editorjs';
+import EditorJS, { ToolConstructable } from '@editorjs/editorjs';
 import Paragraph from '@editorjs/paragraph';
+import katex from 'katex'
 import { InlineMathTool, MathBlockTool, parseEditorOutput, getStyles } from 'editorjs-mathcyou';
 import 'katex/dist/katex.min.css';
 import './App.css';
+
+window.katex = katex
 
 // Default content with math formulas (inline and block)
 const defaultContent = {
@@ -47,7 +50,7 @@ const App: React.FC = () => {
         data: defaultContent,
         tools: {
           paragraph: {
-            class: Paragraph,
+            class: Paragraph as unknown as ToolConstructable,
             inlineToolbar: true,
           },
           inlineMath: {

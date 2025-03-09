@@ -28,3 +28,4 @@ node_modules
 demo/build
 demo/dist
 demo/node_modules
+*.cache
